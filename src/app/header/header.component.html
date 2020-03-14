@@ -1,0 +1,19 @@
+<body>
+    <input type="text" name="name" placeholder="Enter your name" [(ngModel)]="username" />
+    <button type="submit" value="login" (click)="menuDisplay()">Login</button>
+    <span *ngIf="islogin">
+    <button type="submit" value="login" (click)="menuDisable()">LogOut</button>
+    </span>
+    <h1 [hidden]="isShow">welcome...{{text}}</h1>
+    <nav class="navbar">
+        <p></p>gg                                                                                                                                                                                                               
+        <ul [hidden]="isShow">
+            <li class="list">Home</li><br/>
+            <li class="list">About Us</li><br/>
+            <li class="list">Contact</li><br/>
+        </ul>
+    </nav>
+   
+     
+    
+</body>
